@@ -7425,8 +7425,8 @@ header {
       transition: .3s all ease; }
       header .navbar .cta-btn a:hover {
         color: #fff !important;
-        -webkit-box-shadow: 2px 0 30px -5px rgba(253, 95, 0, 0.9);
-        box-shadow: 2px 0 30px -5px rgba(253, 95, 0, 0.9); }
+        -webkit-box-shadow: 2px 0 30px -5px #369674;
+        box-shadow: 2px 0 30px -5px #369674; }
   header .search-form {
     position: relative; }
     header .search-form .icon {
