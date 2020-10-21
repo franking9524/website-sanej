@@ -111,94 +111,8 @@
 
     </section>
 
-    <section class="section bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 element-animate ">
-            <div class="media block-6 d-block text-center">
-              <div class="icon mb-3"><span class="ion-android-notifications text-primary"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Modern Design</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>  
-
-          </div>
-          <div class="col-md-6 col-lg-4 element-animate ">
-            <div class="media block-6 d-block text-center">
-              <div class="icon mb-3"><span class="ion-heart text-primary"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Built With Passion</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div> 
-
-          </div>
-          <div class="col-md-6 col-lg-4 element-animate ">
-            <div class="media block-6 d-block text-center">
-              <div class="icon mb-3"><span class="ion-flash text-primary"></span></div>
-              <div class="media-body">
-                <h3 class="heading">Fast Loading</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div> 
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-
-    
-    
-    <section class="section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="heading mb-4">Meet The Team</h2>
-            <p class="mb-5 lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="media d-block media-custom text-center">
-              <a href="#"><img src="images/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Mellisa Howard</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="media d-block media-custom text-center">
-              <a href="#"><img src="images/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Mike Richardson</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="media d-block media-custom text-center">
-              <a href="#"><img src="images/person_4.jpg" alt="Image Placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Laura Smith</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="media d-block media-custom text-center">
-              <a href="#"><img src="images/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Kevin Gold</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    <!-- END section -->
-
     <span class="ir-arriba ion-chevron-up"></span>
+    <div id="button-wsp"></div>
 
     <footer class="site-footer" role="contentinfo">
       <div class="container">
@@ -259,6 +173,10 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
+    <!--Floating WhatsApp javascript-->
+    <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+    <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
     <script>
       $(document).ready(function(){
         
@@ -276,6 +194,16 @@
           }
         });
   
+        });
+        $(function() {
+        $('#button-wsp').floatingWhatsApp({
+            phone: '+51940428978',
+            headerTitle: 'Contactanos por WhatsApp!',
+            popupMessage: 'Hola, Como podemos ayudarte?',
+            showPopup: true,
+            buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+            position: "left"
+          });
         });
       </script>
   </body>
