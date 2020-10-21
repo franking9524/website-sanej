@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <title>Sanej Industrial SAC | Contacto</title>
+    <link href="images/sanej-logo-black-ico-cute.ico" rel="icon" type="image/x-icon">
     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content= "Sanej Industrial is a company dedicated to manufacturing, marketing goods and specialized technical services for the industrial electrical market nationwide." />
     <meta name="author" content="Josue Sebastian Alban Maza"/>
     <meta name="copyright" content="Sanej Industrial SAC" />
@@ -36,7 +37,7 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav pl-md-5 ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Nosotros</a>
@@ -49,17 +50,14 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
                   <a class="dropdown-item" href="pozos-a-tierra.html">Pozos a tierra</a>
                   <a class="dropdown-item" href="tableros-electricos.html">Tableros el&eacute;ctricos</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
+                <a class="nav-link active" href="contact.html">Contacto</a>
               </li>
             </ul>
             
@@ -161,6 +159,8 @@
       <iframe src="https://maps.google.com.pe/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=SANEJ+INDUSTRIAL+SAC&amp;aq=&amp;ie=UTF8&amp;hq=SANEJ+INDUSTRIAL+SAC&amp;hnear=San+Borja,+Lima&amp;t=m&amp;ll=-11.870165,-77.122993&amp;spn=0.012599,0.050211&amp;z=15&amp;iwloc=A&amp;output=embed" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="300" frameborder="0"></iframe>
     </section>
 
+    <span class="ir-arriba ion-chevron-up"></span>
+
     <footer class="site-footer" role="contentinfo">
       <div class="container">
         <div class="row mb-5">
@@ -168,9 +168,7 @@
             <h3>Acerca de la Industria</h3>
             <p class="mb-5">Somos una empresa dedicada a fabricar, comercializar bienes y servicios t&eacute;cnicos especializados para el mercado El&eacute;ctrico industrial a nivel nacional.</p>
             <ul class="list-unstyled footer-link d-flex footer-social">
-              <li><a href="#" class="p-2" rel="noreferrer"><span class="fa fa-twitter"></span></a></li>
               <li><a href="https://www.facebook.com/proyectosanejsac/?rf=348473231832666" class="p-2" target="_blank" rel="noreferrer"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="#" class="p-2" rel="noreferrer"><span class="fa fa-linkedin"></span></a></li>
               <li><a href="https://www.instagram.com/proyectosanej/" class="p-2" target="_blank" rel="noreferrer"><span class="fa fa-instagram"></span></a></li>
             </ul>
 
@@ -222,8 +220,24 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script src="js/main.js"></script>
-    
+    <script>
+      $(document).ready(function(){
+        
+        $('.ir-arriba').click(function(){
+          $('body, html').animate({
+            scrollTop: '0px'
+          }, 300);
+        });
+  
+        $(window).scroll(function(){
+          if( $(this).scrollTop() > 0 ){
+            $('.ir-arriba').slideDown(300);
+          } else {
+            $('.ir-arriba').slideUp(300);
+          }
+        });
+  
+        });
+      </script>
   </body>
 </html>
