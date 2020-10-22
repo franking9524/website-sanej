@@ -7,6 +7,25 @@
  *
  * Copyright (c) 2017 Daniel Eden
  */
+
+body::-webkit-scrollbar{
+   width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #007238;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:active{
+  background: #16c96c;
+  border-radius: 20px;
+}
+
 .ir-arriba {
    display:none;
    padding:15px;
