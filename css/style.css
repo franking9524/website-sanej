@@ -145,7 +145,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #b14200;
+    color: #032e18;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -2029,7 +2029,7 @@ fieldset:disabled a.btn {
   .btn-primary:hover {
     color: #fff;
     background-color: #d75100;
-    border-color: #ca4c00; }
+    border-color: #032e18; }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(253, 95, 0, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(253, 95, 0, 0.5); }
@@ -2040,8 +2040,8 @@ fieldset:disabled a.btn {
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #ca4c00;
-    border-color: #bd4700; }
+    background-color: #032e18;
+    border-color: #032e18; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(253, 95, 0, 0.5);
@@ -2427,7 +2427,7 @@ fieldset:disabled a.btn {
   color: #007238;
   background-color: transparent; }
   .btn-link:hover {
-    color: #b14200;
+    color: #032e18;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -3855,7 +3855,7 @@ input[type="button"].btn-block {
   border: 1px solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: #b14200;
+    color: #032e18;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -3943,7 +3943,7 @@ input[type="button"].btn-block {
   .badge-primary[href]:hover, .badge-primary[href]:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #ca4c00; }
+    background-color: #032e18; }
 
 .badge-secondary {
   color: #fff;
@@ -4939,7 +4939,7 @@ button.close {
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ca4c00 !important; }
+  background-color: #032e18 !important; }
 
 .bg-secondary {
   background-color: #6c757d !important; }
@@ -7142,7 +7142,7 @@ button.bg-dark:focus {
   color: #007238 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #ca4c00 !important; }
+  color: #032e18 !important; }
 
 .text-secondary {
   color: #6c757d !important; }
