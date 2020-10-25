@@ -8148,8 +8148,9 @@ header {
     flex: 0 0 60px;
     margin-right: 20px; }
     .block-33 .vcard .image img {
-      max-width: 100%;
-      border-radius: 50%; }
+      width: 340px;
+      height: 100px;
+      border-radius: 1%; }
   .block-33 .vcard .name-text .heading {
     line-height: 1.5;
     margin: 0;
