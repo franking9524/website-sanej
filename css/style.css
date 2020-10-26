@@ -396,6 +396,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
+  cursor: pointer;
   height: auto; }
 
 .img-thumbnail {
