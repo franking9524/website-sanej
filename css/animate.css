@@ -27,15 +27,50 @@ body::-webkit-scrollbar-thumb:active{
 }
 
 .ir-arriba {
-   display:none;
-   padding:15px;
-   background:#007238;
-   font-size:15px;
-   color:#fff;
-   cursor:pointer;
-   position: fixed;
-   bottom:15px;
-   right:20px;
+  display:none;
+  padding:15px;
+  background:#007238;
+  font-size:15px;
+  color:#fff;
+  cursor:pointer;
+  position: fixed;
+  bottom:15px;
+  right:20px;
+}
+
+.number {
+  position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  right: 0; /* Establecemos la barra en la izquierda */
+  top: 390px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+  color: #fff;
+}
+
+.number ul {
+  list-style: none;
+  color: #fff;
+}
+
+.number ul li a {
+  display: inline-block;
+  color:#fff;
+  background: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+}
+
+.number ul li .number-1 {
+  background:#032e18; 
+  color:#fff;
+} /* Establecemos los colores de cada red social, aprovechando su class */
+
+.number ul li a:hover {
+  background: #042112; /* Cambiamos el fondo cuando el usuario pase el mouse */
+  padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  color: #fff;
 }
 
 .animated {
