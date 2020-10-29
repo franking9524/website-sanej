@@ -36,6 +36,11 @@ body::-webkit-scrollbar-thumb:active{
   position: fixed;
   bottom:15px;
   right:20px;
+  z-index: 1000;
+}
+
+.button-wsp {
+  z-index: 5000;
 }
 
 .number {
@@ -63,7 +68,7 @@ body::-webkit-scrollbar-thumb:active{
 }
 
 .number ul li .number-1 {
-  background:#032e18; 
+  background:#007238; 
   color:#fff;
 } /* Establecemos los colores de cada red social, aprovechando su class */
 
