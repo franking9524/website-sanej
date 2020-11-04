@@ -8325,8 +8325,8 @@ header {
       margin-bottom: 30px; } }
 
 .readmore {
-  color: #007238; 
-  background: #fff;
+  color: #fff; 
+  background: #007238;
   text-transform: uppercase;
   font-size: .9rem;
   padding: 2px 5px 2px 5px;
@@ -8342,7 +8342,7 @@ header {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
   .readmore:hover {
-    color: #007238; 
+    color: #fff; 
     padding-right: 30px; }
 
 .frame,
