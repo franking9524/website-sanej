@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" type="text/css" href="sweetalert/sweetalert.css">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -102,15 +104,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-5 order-2">
-            <form action="#" method="post">
+            <form id="IndFrees" name="IndFrees" method="post" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <label for="name">Nombre</label>
-                  <input type="text" id="name" class="form-control ">
+                  <input type="text" id="name" name="name" class="form-control ">
                 </div>
                 <div class="col-md-6 form-group">
                   <label for="phone">Telefono</label>
-                  <input type="text" id="phone" class="form-control ">
+                  <input type="text" id="phone" name="phone" class="form-control ">
                 </div>
               </div>
               <div class="row">
@@ -121,7 +123,7 @@
               <div class="row">
                 <div class="col-md-12 form-group">
                   <label for="email">Email</label>
-                  <input type="email" id="email" class="form-control ">
+                  <input type="email" id="email" name="email" class="form-control ">
                 </div>
               </div>
               <div class="row">
@@ -132,9 +134,25 @@
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="submit" value="Enviar Mensaje" class="btn btn-primary px-3 py-3">
+                  <a id="btn_enviar" name="btn_enviar" class="btn btn-primary px-3 py-3" style="color: #fff;">Enviar Mensaje</a>
                 </div>
               </div>
+              <div class="text-center" id="loader1" name="loader1" hidden>
+                <div class="lds-spinner">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+            </div>
             </form>
           </div>
           <div class="col-md-6 order-2 mb-5">
@@ -237,6 +255,9 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/sendForm.js"></script>
+    <!-- Sweet Alert -->
+    <script src="sweetalert/sweetalert.min.js"></script>
     <!--Floating WhatsApp javascript-->
     <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
     <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
