@@ -26,7 +26,7 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('sebastian.alban@overware.pe', 'Proyecto Sanej');
+    $mail->setFrom('Proyectosanejsac@gmail.com', 'Proyecto Sanej');
     $mail->addAddress($correo, $name);     // Add a recipient
    /*  $mail->addBCC('contacto@edumpro.com'); */
 
