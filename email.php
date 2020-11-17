@@ -21,12 +21,12 @@ try {
     $mail->Host       = 'smtp.sendgrid.net';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'apikey';                     // SMTP username
-    $mail->Password   = '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';                               // SMTP password
+    $mail->Password   = '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';                               // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('Proyectosanejsac@gmail.com', 'Proyecto Sanej');
+    $mail->setFrom('cotizaciones@proyectosanej.com', 'Proyecto Sanej');
     $mail->addAddress($correo, $name);     // Add a recipient
    /*  $mail->addBCC('contacto@edumpro.com'); */
 
