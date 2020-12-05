@@ -22,11 +22,11 @@ $("#btn_enviar").click(function(){
                 async: false,
                 cache: false,
                 beforeSend:function(){
-                    $("#loader1").show();
+                    $("#loaderform").show();
                 },
                 success: function (data) {
-                    $("#loader1").hide();
-                    swal("", "Gracias por inscribirte, en breve nos comunicaremos contigo.!", "success");
+                    $("#loaderform").hide();
+                    swal("", "Gracias por inscribirte, en breve nos comunicaremos contigo!", "success");
                     document.getElementById("IndFrees").reset();
                     return true;
                 }
@@ -44,11 +44,11 @@ $("#btn_enviar").click(function(){
                 async: false,
                 cache: false,
                 beforeSend:function(){
-                    $("#loader1").show();
+                    $("#loaderform").show();
                 },
                 success: function (data) {
-                    $("#loader1").hide();
-                    swal("", "Gracias por inscribirte, en breve nos comunicaremos contigo.!", "success");
+                    $("#loaderform").hide();
+                    swal("", "Gracias por inscribirte, en breve nos comunicaremos contigo!", "success");
                     document.getElementById("IndFrees").reset();
                     return true;
                 }

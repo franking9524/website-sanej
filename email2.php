@@ -20,16 +20,16 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.sendgrid.net';                    // Set the SMTP server to send through
+    $mail->Host       = 'mail.neexon.net';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'apikey';                     // SMTP username
-    $mail->Password   = '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';                            // SMTP password
+    $mail->Username   = 'cotizaciones@proyectosanej.com';                     // SMTP username
+    $mail->Password   = 'dejavu2828'; // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
+    $mail->Port       = 25;                                    // TCP port to connect to
 
     //Recipients
     $mail->setFrom('cotizaciones@proyectosanej.com', 'Proyecto Sanej');
-    $mail->addAddress('proyectosanejsac@gmail.com', 'Proyecto Sanej');     // Add a recipient
+    $mail->addAddress('cotizaciones@proyectosanej.com', 'Proyecto Sanej');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
