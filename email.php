@@ -27,12 +27,11 @@ try {
 
     //Recipients
     $mail->setFrom('cotizaciones@proyectosanej.com', 'Proyecto Sanej');
-    $mail->addAddress($correo, $name);     // Add a recipient
-   /*  $mail->addBCC('contacto@edumpro.com'); */
+    $mail->addAddress($correo, $name);     // Add a recipient   
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Proyecto Sanej - Contacto';
+    $mail->Subject = 'Proyecto Sanej - Contacto';	
     $mail->Body    = file_get_contents('banner.html');
 
     $mail->send();
