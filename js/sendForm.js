@@ -1,5 +1,4 @@
 $("#btn_enviar").click(function(){
-
     var result = null;
     var name = $("#name").val();
     var phone = $("#phone").val();
@@ -27,7 +26,11 @@ $("#btn_enviar").click(function(){
                 success: function (data) {
                     $("#loaderform").hide();
                     swal("", "Gracias por inscribirte, en breve nos comunicaremos contigo!", "success");
-                    document.getElementById("IndFrees").reset();
+                    document.getElementById("IndFrees").reset();    
+                    // if (data === 'Message has been sent'){
+                    // } else {
+                    //     swal("Error", data, "error");
+                    // }
                     return true;
                 }
             });
@@ -49,7 +52,11 @@ $("#btn_enviar").click(function(){
                 success: function (data) {
                     $("#loaderform").hide();
                     swal("", "Gracias por inscribirte, en breve nos comunicaremos contigo!", "success");
-                    document.getElementById("IndFrees").reset();
+                    document.getElementById("IndFrees").reset();    
+                    // if (data === 'Message has been sent'){
+                    // } else {
+                    //     swal("Error", data, "error");
+                    // }
                     return true;
                 }
             });
