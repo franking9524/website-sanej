@@ -84,7 +84,7 @@ textarea.form-control {
 /* Header */
 header {
 	position: absolute;
-	top: 30px;
+	// top: 30px;
 	left: 0;
 	width: 100%;
 	z-index: 5;
@@ -488,8 +488,8 @@ header {
 					margin-left: 0.5em;
 					span {
 						color: white;
-				    background-color: #007238;
-				    box-shadow: 0.5em 0 0 #007238,-0.5em 0 0 #007238;
+				    background-color: #061279;
+				    box-shadow: 0.5em 0 0 #061279,-0.5em 0 0 #061279;
 					}
 					@include media-breakpoint-down(md) {
 						font-size: 40px;

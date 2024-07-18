@@ -17,7 +17,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-  background: #007238;
+  background: #061279;
   border-radius: 5px;
 }
 
@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb:active{
 .ir-arriba {
   display:none;
   padding:15px;
-  background:#007238;
+  background:#061279;
   font-size:15px;
   color:#fff;
   cursor:pointer;
@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb:active{
 }
 
 .number ul li .number-1 {
-  background:#007238; 
+  background:#061279; 
   color:#fff;
 } /* Establecemos los colores de cada red social, aprovechando su class */
 
@@ -90,8 +90,8 @@ body::-webkit-scrollbar-thumb:active{
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #007238;
-  border-color: #007238 transparent #007238 transparent;
+  border: 6px solid #061279;
+  border-color: #061279 transparent #061279 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
